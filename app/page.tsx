@@ -31,12 +31,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 p-6 flex flex-col items-center">
       <header className="w-full max-w-4xl text-center py-6">
-        <h1 className="text-4xl font-bold text-yellow-400">
-          Manisan Halua Kembar
-        </h1>
-        <p className="mt-2 text-lg">
-          Menyajikan Halua & Manisan Berkualitas Tinggi dengan Rasa Otentik
-        </p>
+        <div className="flex justify-center items-center space-x-4">
+          <Image
+            src="/logo.png"
+            alt="Manisan Halua Kembar Logo"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+          <div className="text-left">
+            <h1 className="text-4xl font-bold text-yellow-400">
+              Manisan Halua Kembar
+            </h1>
+            <p className="mt-2 text-lg">
+              Menyajikan Halua & Manisan Berkualitas Tinggi dengan Rasa Otentik
+            </p>
+          </div>
+        </div>
       </header>
 
       <section className="w-full max-w-4xl bg-gray-800 p-6 rounded-2xl shadow-lg">
